@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Badal Shah | Portfolio</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   
@@ -14,6 +15,7 @@
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
+    <div id="cur"></div>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
@@ -30,7 +32,7 @@
         </div>
 
     </nav>
-
+    
     <!-- Home section Start -->
     <section class="home" id="home">
         <div class="max-width">
@@ -39,7 +41,7 @@
                 <div class="text-1">Hello, my name is </div>
                 <div class="text-2">Badal Shah </div>
                 <div class="text-3">And i am a <span class="typing"></span></div>
-                <a href="">Hire me</a>
+                <a href="mailto:badalshah187@gmail.com">Hire me</a>
             </div>
         </div>
     </section>
@@ -57,7 +59,7 @@
                     <p>
 
 
-                        Welcome to my portfolio! I'm a passionate front-end web developer with a strong focus on
+                        Welcome to my portfolio! I'm a passionate front-end web developer and a freelance with a strong focus on
                         creating engaging and user-friendly experiences. With a keen eye for design and a deep
                         understanding of front-end technologies, I specialize in crafting intuitive and visually
                         appealing websites. Whether it's building responsive layouts, optimizing performance, or
@@ -67,7 +69,7 @@
                         impression. Take a look at my projects and feel free to get in touch if you have any inquiries
                         or collaboration opportunities. Let's bring your web ideas to life!
 
-                         <a href="#">Download CV</a>
+                         
 
                     </p>
 
@@ -101,11 +103,7 @@
                         <p> Elevate your digital presence with captivating and intuitive User Interface (UI) design. I specialize in crafting visually stunning and pixel-perfect interfaces that seamlessly blend aesthetics with functionality. By focusing on the look and feel of your digital product, I bring your brand to life through thoughtful color schemes, typography, and imagery. </p>
                     </div>
                 </div>
-                <!-- <div class="card">
-                     <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Advertising</div>
-                        <p>In today's digital age, having a strong online presence is crucial. Our digital advertising services encompass a wide range of strategies, including search engine marketing (SEM), social media advertising, display advertising, and remarketing campaigns. We leverage data-driven insights to optimize your digital ads, maximize your reach, and drive conversions.</p> -->
+              
                     </div> 
     </section>
     
@@ -123,40 +121,48 @@
                     <div class="bars">
                         <div class="info">
                             <span>HTML</span>
-                            <span>90%</span>
+                            <span>100%</span>
                         </div>
                         <div class="line html"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>CSS</span>
-                            <span>60%</span>
+                            <span>80%</span>
                         </div>
                         <div class="line css"></div>
+              <br>
+                        <div class="bars">
+                            <div class="info">
+                                <span>Tailwind CSS</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line css"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>JavaScript</span>
-                            <span>60%</span>
+                            <span>75%</span>
                         </div>
                         <div class="line js"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>Python</span>
-                            <span>80%</span>
+                            <span>React</span>
+                            <span>75%</span>
                         </div>
-                        <div class="line Python"></div>
+                        <div class="line react"></div>
 
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>Java</span>
-                            <span>50%</span>
+                            <span>Gsap</span>
+                            <span>100%</span>
                         </div>
-                        <div class="line java"></div>
+                        <div class="line gsap"></div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
         </div>
@@ -164,70 +170,16 @@
     </section>
     
 
-    <!-- contract section start -->
-    <!-- <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
-                    <p>I'm passionate about web development and would love to hear from you. Whether you have a project in mind, need some technical advice, or just want to say hello, feel free to reach out using the contact form or through any of the channels below. I'm always excited to collaborate and explore new opportunities.</p>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="name">Name</div>
-                                <div class="sub-title">Badal Shah</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="name">Address</div>
-                                <div class="sub-title">Narela, Bhopal</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="name">Email</div>
-                                <div class="sub-title">badalshah187@gmail.com</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form class="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                            <div class="field">
-                                <input type="text" placeholder="subject" required>
-                            </div>
-                            <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Describe project.." required></textarea>
-                            </div>  
-                            <div class="button"> <br> <br> <br>
-                                <button type="submit">Send message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-     -->
+   
+        
+     
+    
      <div id="connect">
-        <p>You can get in touch <br> with me via <a class="red" href="badalshah187@gmail.com">mail</a> or <br> <a class="yellow" href="https://instagram.com/badal.__shah?igshid=NGVhN2U2NjQ0Yg==">instagram</a> or <a  class="blue" href='https://www.linkedin.com/in/badal-shah-369a82257/'>linkedin</a></p>
+        <p>You can get in touch <br> with me via <a class="red" href="mailto:badalshah187@gmail.com">mail</a> or <br> <a class="yellow" href="https://instagram.com/badal.__shah?igshid=NGVhN2U2NjQ0Yg==">instagram</a> or <a  class="blue" href='https://www.linkedin.com/in/badal-shah-369a82257/'>linkedin</a></p>
      </div>
     <!-- footer section start -->
     <footer>
-        <span>Created By <a href="#">Badal Shah</a> <span class="far fa-copyright"></span>2023 All rights reserved. </span>
+        <span>Created By <a href="https://www.linkedin.com/in/badal-shah-369a82257/">Badal Shah</a> <span class="far fa-copyright"></span>2023 All rights reserved. </span>
     </footer>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -237,9 +189,10 @@
     <script src="https://js.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/owl.carousel.min.js"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    
 </body>
 
 </html>
