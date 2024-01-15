@@ -855,6 +855,9 @@ html{
       .services .serv-content .card{
          width: 100%;
       }
+       footer{
+        margin-top: 170px;
+    }
   }
   @media (max-width: 500px) {
      .home img {
