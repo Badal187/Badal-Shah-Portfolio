@@ -10,10 +10,12 @@
 html{
     scroll-behavior: smooth;
 }
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+    
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -28,7 +30,7 @@ html{
     justify-content: space-between;
 }
 .navbar{
-    position: fixed;
+     position: fixed; 
     width: 100%;
     z-index: 999;
     padding: 30px 0;
@@ -114,6 +116,7 @@ html{
     /* background: url("bacground\ img.jpeg") no-repeat center; */
     color: #fff;
     font-family: 'Ubuntu' , sans-serif;
+    
 }
 .home img{
     width: 40%;
@@ -300,7 +303,7 @@ html{
    .services{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 23px;
     color: #fff;
     background: #111;
@@ -430,14 +433,125 @@ html{
     width: 60%;
 
    }
-   .skills-content .right .python::before{
-    width: 80%;
+   .skills-content .right .react::before{
+    width: 75%;
 
    }
-   .skills-content .right .java::before{
-    width: 50%;
+   .skills-content .right .gsap::before{
+    width: 100%;
 
    }
+   #page3{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    padding: 2vw 0;
+    
+}
+#elem{
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.377);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    overflow: hidden;
+}
+#elem h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.2s;
+}
+#elem:hover .overlay{
+    top: 0;
+}
+ /* #elem-con{
+  
+    background-color: #ef0303;
+}  */
+#fixed-img{
+    height: 30vw;
+    width: 24vw;
+    position: fixed;
+    background-color: #ef0303;
+    z-index: 99;
+    border-radius: 10px;
+    left: 60%;
+    top: 30%;
+    display: none;
+}
+#fea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vh;
+    font-weight: 400;
+    font-size: 1vw;
+}
+#project{
+    width: 20%;
+   border: 1px solid red;
+   border-radius: 50px;
+   padding: 1vw 3vw;
+   margin-left: 2vw;
+   position: relative;
+   overflow: hidden;
+   transition: all ease 0.4s;
+   position: relative;
+   
+   
+  
+}
+#project a{
+    font-size: 1.4vw
+
+    
+
+    
+    
+}
+#project i{
+    margin-left: 12px;
+    font-weight: 500;
+    
+    
+}
+#project  h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+    
+}
+#project h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+
+    
+
+
+}
+#project h4 a{
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
 
       
    
@@ -600,6 +714,9 @@ html{
 }
    /* footer section styling  */
    footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #111;
     padding: 20px 23px;
     color: #fff;
@@ -612,13 +729,15 @@ html{
     text-decoration: underline;
 
    }
-
-
-
-
-
-
-
+   #loader{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 0.3s;
+   }
 
 
 
@@ -629,135 +748,157 @@ html{
 
  /* Responsive media query start */
  @media (max-width: 1300px){
-       .home .max-width{
-        margin-left: 0px;
-       }
-    
-    @media (max-width: 1104px){
-        .about .about-content .left img{
-            height: 350px;
-            width: 350px;
+    .home .max-width{
+     margin-left: 0px;
+    }
+ 
+ @media (max-width: 1104px){
+     .about .about-content .left img{
+         height: 350px;
+         width: 350px;
+      
+     }
          
-        }
-            
+ }
+ @media (max-width: 991px){
+ .max-width{
+     padding: 0 50px;
+ }
+ 
+ }
+ .menu-btn{
+     display: block;
+     z-index: 999;
+ }
+ .menu-btn i.active::before{
+     content: "\f00d";
+ }
+ .navbar .menu{
+     position: fixed;
+     height: 100vh;
+     width: 100%;
+     left: -100%;
+     top: 0;
+     background: #111;
+     text-align: center;
+     padding-top: 80px;
+     transition: all 0.3s ease;
+ }
+ .navbar .menu.active{
+     left: 0;
+
+ }
+ .navbar .menu li{
+     display: block;
+ }
+ .navbar .menu li{
+     display: block;
+     margin: 20px 0;
+     font-size: 25px;
+
+
+ }
+ .home .home-content .text-2{
+     font-size: 70px
+       
+  }
+  .home .home-content .text-3{
+     font-size: 35px;
+     
+       
+  }
+  .home .home-content a{
+     font-size: 23px;
+     padding: 10px 30px;
+
+  }
+  .max-width{
+     max-width: 800px;
+  }
+  .about .about-content .colomn{
+     width: 50%;
+  }
+  .about .about-content .left{
+     display: flex;
+     justify-content: center;
+     margin: 0 auto 60px;
+
+  }
+  .about .about-content .right{
+     flex: 100%;
+  }
+  .services .serv-content .card{
+     width: calc(50% - 10px);
+     margin-bottom: 20px;
+  }
+  .skills .skills-content .colomn,
+  .contact .contact-content .column{
+     width: 100%;
+     margin-bottom: 35px;
+  }
+  
+}
+  @media (max-width: 690px) {
+      .max-width{
+         padding: 0 23px;
+      }
+      .home .home-content .text-2{
+         font-size: 60px;
+      }
+      .home .home-content .text-3{
+         font-size: 32px;
+      }
+      .home .home-content a{
+         font-size: 20px;
+     
+      }
+      .services .serv-content .card{
+         width: 100%;
+      }
+  }
+  @media (max-width: 500px) {
+     .home img {
+         width: 40%;
+         height: 20%;
+         margin-top: 77px;
+     }
+     #connect p {
+         color: #fff;
+         font-size: 70px;
+         padding: 20px;
+         margin-left: 2px;
+         text-align: center;
+         padding-top: 145px;
+     }
+     #project a {
+        font-size: 2vw;
+        padding: 5px;
     }
-    @media (max-width: 991px){
-    .max-width{
-        padding: 0 50px;
-    }
+ 
+     #skills p{
+     
+      font-size: 13px;
+      gap: 0px;
+     
+         
+     }
     
-    }
-    .menu-btn{
-        display: block;
-        z-index: 999;
-    }
-    .menu-btn i.active::before{
-        content: "\f00d";
-    }
-    .navbar .menu{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: #111;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-    .navbar .menu.active{
-        left: 0;
-
-    }
-    .navbar .menu li{
-        display: block;
-    }
-    .navbar .menu li{
-        display: block;
-        margin: 20px 0;
-        font-size: 25px;
-
-
-    }
-    .home .home-content .text-2{
-        font-size: 70px
-          
+ 
+     .home .home-content .text-2{
+         font-size: 50px;
      }
      .home .home-content .text-3{
-        font-size: 35px;
-        
-          
+         font-size: 27px;
      }
-     .home .home-content a{
-        font-size: 23px;
-        padding: 10px 30px;
-
-     }
-     .max-width{
-        max-width: 800px;
-     }
-     .about .about-content .colomn{
-        width: 50%;
-     }
-     .about .about-content .left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-
-     }
-     .about .about-content .right{
-        flex: 100%;
-     }
-     .services .serv-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-     }
-     .skills .skills-content .colomn,
-     .contact .contact-content .column{
-        width: 100%;
-        margin-bottom: 35px;
-     }
-     
- }
-     @media (max-width: 690px) {
-         .max-width{
-            padding: 0 23px;
-         }
-         .home .home-content .text-2{
-            font-size: 60px;
-         }
-         .home .home-content .text-3{
-            font-size: 32px;
-         }
-         .home .home-content a{
-            font-size: 20px;
-        
-         }
-         .services .serv-content .card{
-            width: 100%;
-         }
-     }
-     @media (max-width: 500px) {
-        .home img {
-            width: 40%;
-            height: 20%;
-            margin-top: 26px;
-        }
-        #connect p {
-            color: #fff;
-            font-size: 70px;
-            padding: 20px;
-            margin-left: 2px;
-            text-align: center;
-            padding-top: 145px;
-        }
-        #skills p{
-        
-         font-size: 13px;
-         gap: 0px;
-        
-            
-        }
+  }
+  #fea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vh;
+    font-weight: 400;
+    font-size: 4.7vw;
+}
        
     
         .home .home-content .text-2{
@@ -766,4 +907,4 @@ html{
         .home .home-content .text-3{
             font-size: 27px;
         }
-     }
+      

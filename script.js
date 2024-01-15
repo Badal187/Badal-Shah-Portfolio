@@ -1,3 +1,4 @@
+ 
 $(document).ready(function(){
     $(window).scroll(function(){
       if(this.scrolly > 20){
@@ -12,19 +13,19 @@ $(document).ready(function(){
 
       }
     });
-    gsap.to(".navbar",{
-      backgroundColor: "#000",
-      height:"110px",
+      gsap.to(".navbar",{
+     backgroundColor: "#000",
+       height:"110px",
       duration:"0.5",
-      scrollTrigger:{
+       scrollTrigger:{
           trigger:".navbar",
-          scroller:"body",
-          // markers: true,
+           scroller:"body",
+         // markers: true,
           start:"top -10%",
-          end: "top -11%",
+       end: "top -11%",
           scrub:1
       }
-    })
+     })
 
     // slide-up script
     $('.scroll-up-btn').click(function(){
@@ -39,7 +40,7 @@ $(document).ready(function(){
     });
   //  typing animated script
     var typed = new Typed(".typing", {
-      strings: ["Developer" ,"Freelancer","Designer","Editor" ],
+      strings: ["React Developer"," Front-End Developer" ,"Freelancer","Designer","Editor" ],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true
@@ -48,13 +49,29 @@ $(document).ready(function(){
    });
 
    var typed = new Typed(".typing-2", {
-    strings: ["Developer" ,"Freelancer","Designer","Editor" ],
+    strings: ["React Developer","Front-End Developer" ,"Freelancer","Designer","Editor" ],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
 
   
  });
+ let elemC = document.querySelector('#elem-con')
+ let fixed = document.querySelector('#fixed-img')
+ elemC.addEventListener('mouseenter',function(){
+   fixed.style.display ="block";
+ })
+ elemC.addEventListener('mouseleave',function(){
+   fixed.style.display = 'none'
+ })
+
+  let elems = document.querySelectorAll("#elem")
+  elems.forEach( function(e){
+  e.addEventListener('mouseenter',function(){
+   let image = e.getAttribute("data-image")
+   fixed.style.backgroundImage = `url(${image})`
+  })
+  })
 
 
 
@@ -82,3 +99,11 @@ $(document).ready(function(){
 
     });
 });
+gsap.from(".logo , .menu-btn",{
+  y:-100,
+  duration:1,
+  delay:1,
+  opacity:0,
+  stagger:0.5
+})
+
